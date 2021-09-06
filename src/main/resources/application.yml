@@ -1,0 +1,5 @@
+rates_url: https://openexchangerates.org/api/historical
+rates_app_id: 65e7ecdca7914e50a9e8763c3a06d408
+gifs_url: https://api.giphy.com/v1/gifs/search
+giphy_api_key: 24EoD8JiB5kDh11D2EPreqNIOCmEhMFh
+opposite_currency: RUB
