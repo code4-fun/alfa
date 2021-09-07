@@ -1,4 +1,4 @@
-FROM openjdk:11
+FROM maslick/minimalka:jdk11
 EXPOSE 8080
 RUN mkdir ./app
 COPY ./alfa-0.0.1-SNAPSHOT.jar ./app
