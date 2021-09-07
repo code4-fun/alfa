@@ -20,10 +20,11 @@ public class OpenExchangeRatesService {
   private String opposite_currency;
 
   /**
-   * Determines if the today's exchange rate of the given currency against the Ruble
-   * is higher then the yesterday's exchange rate.
-   * @param currency currency under consideration (3-letter string, for instance: "AUD")
-   * @return "rich" if today's currency rate is higher then yesterday's, "broke" otherwise.
+   * Determines if the today's exchange rate of the given currency against the opposite_currency
+   * set up in the applcation.yml file is higher than the yesterday's exchange rate.
+   * @param currency currency under consideration (3-letter string, for instance: "AUD") provided
+   *                 in the URL.
+   * @return "rich" if today's currency rate is higher than the yesterday's rate, "broke" otherwise.
    */
   public String brokeOrRich(String currency) {
     Double currencyRateToday = openExchangeRatesClient

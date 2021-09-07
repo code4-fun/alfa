@@ -27,7 +27,7 @@ public class GiphyService {
 
   /**
    * Returns random gif from http://giphy.com from the category broke or rich
-   * dependig on the exchange rate of the currency provided in path.
+   * depending on the exchange rate of the currency provided in path.
    * @param currency currency under consideration (3-letter string, for instance: "AUD")
    * @return gif
    * @throws IOException throws IOException
