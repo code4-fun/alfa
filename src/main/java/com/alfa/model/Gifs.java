@@ -3,6 +3,7 @@ package com.alfa.model;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import java.util.ArrayList;
 import lombok.AllArgsConstructor;
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -18,6 +19,7 @@ public class Gifs {
   @Setter
   @AllArgsConstructor
   @NoArgsConstructor
+  @EqualsAndHashCode
   public static class Urls{
     private String id;
   }

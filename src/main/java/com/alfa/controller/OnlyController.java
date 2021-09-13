@@ -2,6 +2,7 @@ package com.alfa.controller;
 
 import com.alfa.service.GiphyService;
 import java.io.IOException;
+import java.time.LocalDate;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -19,8 +20,9 @@ public class OnlyController {
   private final GiphyService giphyService;
 
   @GetMapping("{currency}")
-  public ResponseEntity<byte[]> getGif(@PathVariable("currency") String currency) throws IOException {
-  return giphyService.getGif(currency);
+  public ResponseEntity<byte[]> getGif(@PathVariable("currency") String currency)
+      throws IOException {
+    return giphyService.getGif(currency, LocalDate.now());
   }
 
   @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
